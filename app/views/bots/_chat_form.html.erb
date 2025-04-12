@@ -1,0 +1,6 @@
+<%= form_with url: bot_chat_messages_path(bot) do |form| %>
+  <div class="h-full flex flex-col w-full"> 
+    <%= form.textarea :body, class: "textarea w-full" %>
+    <%= form.submit "Send message", class: "btn btn-primary ml-auto mt-4" %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+<% if chat_message.user_prompt.present? %>
+  <div class="chat chat-end">
+    <div class="chat-bubble chat-bubble-warning"><%= chat_message.user_prompt %></div>
+  </div>
+<% end %>
+
+<% if chat_message.ai_response.present? %>
+  <div class="chat chat-start">
+    <div class="chat-bubble chat-bubble-primary"> <%= chat_message.ai_response %> </div>
+  </div>
+<% end %>
